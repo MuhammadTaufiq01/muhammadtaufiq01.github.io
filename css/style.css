@@ -1,0 +1,37 @@
+.jumbotron {
+    height: 635px;
+    color: #e6d5b8;
+    background-color: #00738a;
+    background-image: url(https://braintrustinteractive.s3.amazonaws.com/wp-content/uploads/background-city-blur.jpg);
+    background: linear-gradient(167deg, rgba(0,115,138,0.6278886554621849) 27%, rgba(0,50,78,1) 96%);
+    
+    
+}
+
+.datadiri {
+    min-height: 635px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: none;
+}
+/* .col{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-sizing: border-box;
+} */
+
+
+.fungsional {
+    min-height: 635px;
+    background-color: #1f6f8b;
+    padding-top: 30px;
+    color: white;
+}
+
+a{
+    color: whitesmoke;
+}
+footer {
+    background-color: #e6d5b8;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
