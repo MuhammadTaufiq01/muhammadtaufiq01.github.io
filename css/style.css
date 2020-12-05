@@ -1,37 +1,149 @@
-.jumbotron {
-    height: 635px;
-    color: #e6d5b8;
-    background-color: #00738a;
-    background-image: url(https://braintrustinteractive.s3.amazonaws.com/wp-content/uploads/background-city-blur.jpg);
-    background: linear-gradient(167deg, rgba(0,115,138,0.6278886554621849) 27%, rgba(0,50,78,1) 96%);
-    
-    
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    opacity: 100%;
+    z-index: 5;
 }
 
-.datadiri {
-    min-height: 635px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: none;
+.nav-item{
+    transition: 1s;
 }
-/* .col{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-sizing: border-box;
-} */
 
+.nav-item:hover{
+    border-radius: 10%;
+    background-color: #fff;
+}
 
-.fungsional {
-    min-height: 635px;
-    background-color: #1f6f8b;
-    padding-top: 30px;
+.nav-link{
     color: white;
 }
 
-a{
-    color: whitesmoke;
+.nav-link:hover{
+    color: black;
 }
-footer {
-    background-color: #e6d5b8;
-    padding-top: 30px;
-    padding-bottom: 30px;
+
+.jumbotron{
+    width: 100%;
+    height: 635px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin: 0%;
+    background-image: url(../bg/Office-Space-Photo-Zoom-Virtual-Background.a39a01f0.png);
+    background-size: cover;
 }
+
+.bgblur{
+    margin-top: -70px;
+    height: 635px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+}
+
+.jumbotron .container{
+    padding-top: 250px;
+    filter: brightness(100%);
+    
+}
+
+/* .jumbotron1{
+    top:-635px;
+    opacity: 100%;
+    animation: slidekonten 3s ease 3s infinite alternate;
+}
+
+.jumbotron2{
+    animation: slidekonten 3s ease 3s infinite alternate-reverse;
+}
+
+@keyframes slidekonten{
+    0%{
+        opacity: 100%;
+
+    }
+    50%{
+        opacity: 0%;
+    }
+
+    75%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 0%;
+    }
+} */
+/* 
+@keyframes slidekonten2{
+    0%{
+        opacity: 0%;
+
+    }
+    50%{
+        opacity: 100%;
+    }
+
+    75%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 100%;
+    }
+} */
+
+
+#deskripsi{
+    padding: 30px;
+    width: 100%;
+    height: 635px;
+}
+
+.foto{
+    text-align: center;
+}
+
+.foto .fotoimg{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+section{
+    padding: 30px;
+    height: 635px;
+    width: 100%;
+    background-color: rgb(0, 0, 32);
+    color: #fff;
+}
+
+/* .kotak{
+    align-self: center;
+    text-align: center;
+    width: 80%;
+    height: px;
+    border: 1;
+    background-color: #fff;
+    transition: width 500ms, height 500ms, padding 500ms;
+    transition-timing-function: ease;
+}
+
+.kotakimg1{
+    height: 0px; width: 0px;
+    transition: width 500ms, height 500ms;
+    transition-timing-function: ease;
+}
+
+.kotak:hover{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    height: 350px;
+    image-resolution: 200px 200px;
+}
+
+.kotak:hover .kotakimg1{
+    height: 200px; width: 200px;
+} */
