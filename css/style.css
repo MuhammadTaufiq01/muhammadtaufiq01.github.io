@@ -93,9 +93,11 @@ html{
         opacity: 100%;
     }
 } */
-
-
 #deskripsi{
+    display: block;
+}
+
+.deskripsi-dalam{
     padding: 30px;
     width: 100%;
     height: 635px;
