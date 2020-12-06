@@ -94,6 +94,8 @@ html{
     }
 } */
 #deskripsi{
+    width: 100%;
+    min-height: 635px;
     display: block;
 }
 
