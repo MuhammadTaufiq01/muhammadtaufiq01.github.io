@@ -27,21 +27,43 @@ html{
     color: black;
 }
 
+.senapscrollmain{
+    scroll-snap-type: block proximity;
+}
+
+.senapscroll{
+    scroll-snap-align: start;
+}
+
+.jumbotronall{
+    width: 200%;
+    height: 635px;
+    display: inline-flex;
+    overflow: hidden;
+    animation: slidekonten 10s ease 5s infinite alternate;
+
+}
+
+.jumbotronall::-webkit-scrollbar{
+    width: 0;
+}
+
+@keyframes slidekonten{
+    0%,45%{
+        margin-left: 0%;
+    }
+    55%,100%{
+        margin-left: -100%;
+    }
+}
+
 .jumbotron{
     width: 100%;
     height: 635px;
     background-color: black;
     color: rgb(255, 255, 255);
     margin: 0%;
-    background-image: url(../bg/Office-Space-Photo-Zoom-Virtual-Background.a39a01f0.png);
     background-size: cover;
-}
-
-.bgblur{
-    margin-top: -70px;
-    height: 635px;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.4);
 }
 
 .jumbotron .container{
@@ -50,49 +72,28 @@ html{
     
 }
 
-/* .jumbotron1{
-    top:-635px;
-    opacity: 100%;
-    animation: slidekonten 3s ease 3s infinite alternate;
+.jumbotron1{
+    background-image: url(../bg/Office-Space-Photo-Zoom-Virtual-Background.a39a01f0.png);
 }
 
 .jumbotron2{
-    animation: slidekonten 3s ease 3s infinite alternate-reverse;
+    background-image: url(../bg/modern-office-library-boyddesign-malibu-california-201106_1000-watermarked.jpg);
 }
 
-@keyframes slidekonten{
-    0%{
-        opacity: 100%;
 
-    }
-    50%{
-        opacity: 0%;
-    }
+.jumbotron2{
+    
+}
 
-    75%{
-        opacity: 0%;
-    }
-    100%{
-        opacity: 0%;
-    }
-} */
-/* 
-@keyframes slidekonten2{
-    0%{
-        opacity: 0%;
 
-    }
-    50%{
-        opacity: 100%;
-    }
 
-    75%{
-        opacity: 100%;
-    }
-    100%{
-        opacity: 100%;
-    }
-} */
+.bgblur{
+    margin-top: -70px;
+    height: 635px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+}
+
 #deskripsi{
     width: 100%;
     min-height: 635px;
@@ -102,7 +103,7 @@ html{
 .deskripsi-dalam{
     padding: 30px;
     width: 100%;
-    height: 635px;
+    min-height: 635px;
     display: contents;
 }
 
@@ -129,31 +130,26 @@ section{
     color: #fff;
 }
 
-/* .kotak{
+.container-fluid.fungsional{
+    text-align: center;
+    max-width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+/* .container-fluid.fungsional::-webkit-scrollbar{
+    width: 0;
+} */
+
+.container-fluid.fungsional .kotak{
+    text-align: center;
+    margin: 20px;
+    min-width: 200px;
+    height: 300px;
+    box-sizing: border;
+    border-radius: 10%;
     align-self: center;
     text-align: center;
-    width: 80%;
-    height: px;
-    border: 1;
+    color: black;
     background-color: #fff;
-    transition: width 500ms, height 500ms, padding 500ms;
-    transition-timing-function: ease;
 }
-
-.kotakimg1{
-    height: 0px; width: 0px;
-    transition: width 500ms, height 500ms;
-    transition-timing-function: ease;
-}
-
-.kotak:hover{
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    height: 350px;
-    image-resolution: 200px 200px;
-}
-
-.kotak:hover .kotakimg1{
-    height: 200px; width: 200px;
-} */
