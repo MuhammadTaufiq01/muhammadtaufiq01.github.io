@@ -32,6 +32,8 @@ html{
 }
 
 .senapscroll{
+    width: 100%;
+    overflow: hidden;
     scroll-snap-align: start;
 }
 
@@ -39,7 +41,6 @@ html{
     width: 200%;
     height: 635px;
     display: inline-flex;
-    overflow: hidden;
     animation: slidekonten 10s ease 5s infinite alternate;
 
 }
