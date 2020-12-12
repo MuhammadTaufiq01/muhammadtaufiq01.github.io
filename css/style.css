@@ -113,16 +113,6 @@ html{
     height: 30px;
 }
 
-.foto{
-    text-align: center;
-}
-
-.foto .fotoimg{
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
-} 
-
 section{
     padding: 30px;
     height: 635px;
