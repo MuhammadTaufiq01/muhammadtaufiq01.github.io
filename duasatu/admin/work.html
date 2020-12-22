@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="admin.css">
+
+  <title>Admin</title>
+</head>
+
+<body>
+  <!-- navigation -->
+  <nav class="navbar navbar-light bg-dark fixed-top">
+    <div class="container-fluid">
+      <!-- Include name in the future -->
+      <a class="navbar-brand text-white">Selamat datang Admin, <b>001</b>!</a>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom"
+          title="Search"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- menu: include menu that admin need for manage -->
+  <div class="row">
+    <div class="col-md-2 bg-dark text-warning bordered bordered-secondary px-3 py-5" style="">
+      <div class="icon m-4 mt-5">
+        <h5><i class="fas fa-user m-4"></i>
+          <a href="">
+            <i class="fas fa-cog" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit Profile"></i>
+          </a>
+        </h5>
+      </div>
+      <!-- dashboard -->
+      <a href="dashboard.html">
+        <button class="btn btn-dark">
+          <!-- icon -->
+          <h6><i class="fas fa-columns p-2"></i>Dashboard</h6>
+        </button>
+      </a>
+      <hr>
+      <!-- Work -->
+      <a href="work.html">
+        <button class="btn btn-secondary">
+          <!-- icon -->
+          <h6><i class="fas fa-laptop-code p-2"></i>Work</h6>
+        </button>
+      </a>
+      <hr>
+      <!-- Work -->
+      <a href="client.html">
+        <button class="btn btn-dark">
+          <!-- icon -->
+          <h6><i class="fas fa-user-tag p-2"></i>Client</h6>
+        </button>
+      </a>
+      <hr>
+      <!-- Worker -->
+      <a href="worker.html">
+        <button class="btn btn-dark">
+          <!-- icon -->
+          <h6><i class="fas fa-people-carry p-2"></i>Worker</h6>
+        </button>
+      </a>
+      <hr>
+      <!-- Client -->
+      <!-- link to client -->
+      <a href="user.html">
+        <button class="btn btn-dark">
+          <!-- icon -->
+          <h6><i class="fas fa-users p-2"></i>User</h6>
+        </button>
+      </a>
+      <hr>
+      <!-- Client -->
+      <!-- link to client -->
+      <a href="../login.html">
+        <button class="btn btn-dark">
+          <!-- icon -->
+          <h6><i class="fas fa-users p-2"></i> Logout</h6>
+        </button>
+      </a>
+      <hr>
+    </div>
+
+    <!-- Isi -->
+    <div class="col-md-10 px-3 py-5">
+      <!-- info -->
+      <div class="mt-5 d-flex">
+          
+      <!-- table data worker online -->
+      <div class="mt-4">
+        <div class="m-2">
+          <hr>DuaSatu Startup<br>
+          Online Worker
+        </div>
+        <table class="table m-2 bordered">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Company</th>
+              <th scope="col">Adress</th>
+              <th scope="col">Job</th>
+              <th scope="col">Description</th>
+              <th scope="col">Due Date</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- online list -->
+            <tr>
+              <th scope="row">1</th>
+              <td>Indie Souvenir</td>
+              <td>Chicago</td>
+              <td>Logo Design</td>
+              <td>It must be simple, timeless logo and rememberable. Our company sell glasses, mugs, t-shirt.</td>
+              <td>23 Dec 2020 - 15:00 (EST)</td>
+              <td><a href="../duasatucompany/info.html"><i class="fas fa-info-circle" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" title="Info"></i>
+                </a></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>caffeeIn</td>
+              <td>Australia</td>
+              <td>Flyer</td>
+              <td>We start a cafeeeIn, a cafe serve coffee drinks hot or cold and the coffee beans imported from world. We also serve foods. We want to spread promos on new year event so i need it before 25 Dec 2020</td>
+              <td>24 Dec 2020 - 15:00 (EST)</td>
+              <td><a href="../duasatucompany/info.html"><i class="fas fa-info-circle" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" title="Info"></i>
+                </a></td>
+            </tr>
+            <!-- <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr> -->
+
+            <!-- online list end -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- my work -->
+      <div class="m-4">
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/8c11d6a6fa.js" crossorigin="anonymous"></script>
+  <!-- local js -->
+  <script src="admin.js"></script>
+</body>
+
+</html>
